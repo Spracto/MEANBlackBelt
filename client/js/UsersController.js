@@ -6,7 +6,7 @@ blackBelt.controller('UsersController',
     $scope.login = function(User){
       // console.log("data is", User)
       UserFactory.create(User, function(users){
-        $scope.users = users
+        $scope.users = users;
         // $rootScope.userId =
         $location.path('/polls')
       })

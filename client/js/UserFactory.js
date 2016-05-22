@@ -8,17 +8,17 @@ blackBelt.factory('UserFactory', function($http, $rootScope){
       // console.log("new User data is", newUser)
       $rootScope.userId = newUser._id;
       // console.log("the user id in rootScope is ",$rootScope.userId)
-      Users.push(newUser)
-      callback(Users)
-    })
+      Users.push(newUser);
+      callback(Users);
+    });
   }
 
   factory.index = function(callback){
     $http.get('/users').success(function(userData){
       Users = userData;
       // console.log('userData in factory is', userData)
-      callback(Users)
-    })
+      callback(Users);
+    });
   }
-  return factory
-})
+  return factory;
+});

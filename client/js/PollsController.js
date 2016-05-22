@@ -20,7 +20,7 @@ blackBelt.controller('PollsController',
         }
       }
       $scope.polls = polls;
-      console.log("poll data", polls)
+      // console.log("poll data", polls)
     });
 
 

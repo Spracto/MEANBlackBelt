@@ -10,7 +10,7 @@ blackBelt.controller('VotesController',
       $scope.poll = [];
 
       PollFactory.getPollById($routeParams.id, function(pollData){
-        // console.log("params id is ", $routeParams.id)
+        console.log("params id is ", $routeParams.id)
         $scope.poll = pollData;
       })
 
